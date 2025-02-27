@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programación web</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Programadores Web</h1>
-        <p>Facultad de telemática</p>
-        <nav>
+        <div id="top">
+            <h1>Programadores Web</h1>
+            <p>Facultad de telemática</p>
+        </div>
+        <nav id="navigation">
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Servicios</a></li>
@@ -20,18 +23,21 @@
     </header>
 
     <main>
-        <section>
-            <img src="" alt="">
-            <div>
+        <section id="part-1">
+            <img src="https://www.universalformacion.com/images/blog/627e1bd7d7d473.jpg" alt="prog-web" id="backImg">
+            <div id="p1-text">
                 <h2>Programación web</h2>
-                <div>
-                    <img src="" alt="">
+                <div id="location">
+                    <svg id="iconLocation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2">
+                        <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"></path>
+                    </svg>
                     <p>Colima, Col.</p>
                 </div>
-                <button type="button"></button>
+                <button type="button">CONTACTAR</button>
             </div>
         </section>
-        <section>
+        <section id="part-2">
             <h1>Nuestros servicios</h1>
             <div id="servContainer">
                 <div class="services">
@@ -57,17 +63,17 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="part-3">
             <h2>Contacto</h2>
             <form>
                 <h3>CONTACTANOS LLENANDO TODOS LOS CAMPOS</h3>
                 <label for="name">Nombre:</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" >
                 <label for="telephone">Teléfono:</label>
-                <input type="tel" name="telephone" id="telephone" required>
+                <input type="tel" name="telephone" id="telephone" >
                 <br>
                 <label for="email">Correo:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" >
                 <br>
                 <label for="message">Mensaje:</label>
                 <input type="text" name="message" id="message">
