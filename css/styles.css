@@ -1,3 +1,7 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 body {
     background-color: #ebebeb;
     margin: 0;
@@ -25,10 +29,12 @@ header {
     text-align: center;
 }
 
-#navigation {
+nav {
     background-color: #3cacbe;
     height: fit-content;
     max-height: 4vh;
+    display: flex;
+    flex-direction: row;
     justify-items: center;
     align-items: center;
 }
@@ -38,15 +44,16 @@ ul {
     margin: 0;
     display: flex inline;
     justify-content: center;
+    align-items: center;
     gap: 1rem;
+    width: 100%;
 
 }
 li {
     list-style: none;
-    margin-inline: 25%;
-
-
+    margin-inline: 5vw;
 }
+
 li a {
     text-decoration: none;
     color: #fffef6;
@@ -57,7 +64,8 @@ li a {
 
 #part-1 {
     position: relative;
-    height: 30vh;
+    height: 40vh;
+    overflow: hidden;
 }
 
 #backImg {
@@ -86,6 +94,16 @@ li a {
     height: 100%;
 }
 
+#contact {
+    padding: 10px 18px;
+    background-color: #40bbcf;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
 #location {
     display: flex;
 }
@@ -94,32 +112,40 @@ li a {
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: 2vh;
 }
 
 #servContainer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: aquamarine;
 }
 
 .services {
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
     max-width: 27vw;
-    margin: 3vw;
+    margin-inline: 3vw;
     padding: 15px;
     text-align: center;
     align-items: center;
+}
+
+.services > h3 {
+    color: #3cacbe;
+    font-weight: 200;
+}
+
+.services > p {
+    color: #545454;
 }
 
 .services > div {
     width: 12vh;
     height: 12vh;
     border-radius: 50%;
-    background-color: aquamarine;
+    background-color: #ffcd14;
     display: flex;
     text-align: center;
     align-items: center;
@@ -135,14 +161,88 @@ li a {
 }
 
 form {
-    max-width: 60vw;
-    background-color: blueviolet;
+    max-width: 70%;
+    background-color: #7f7f7f;
     padding: 2vw;
+    padding-top: 0;
+    border-radius: 15px;
+    color: #fffef6;
+    font-weight: bold;
+}
 
+form > h3 {
+    color: #ffcd14;
+    font-weight: bolder;
+}
+
+input {
+    width: 100%;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+}
+
+input::placeholder {
+    color: #b9b8b8;
+    padding-left: 10px;
+}
+
+#message {
+    height: 25vh;
 }
 
 #formToLeft {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#formName {
+    display: flex;
+    flex-direction: column;
     text-align: left;
+    width: 49%;
+}
+
+#formTelephone {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 49%;
+}
+
+#formEmail {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+#formMessage {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+}
+
+#formButton {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    width: 100%;
+}
+
+#subForm {
+    padding: 10px 18px;
+    background-color: #40bbcf;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 footer {
@@ -150,5 +250,8 @@ footer {
     max-height: 5vh;
     background-color: antiquewhite;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     margin-top: 5vh;
+    padding: 1vh;
 }
