@@ -29,6 +29,11 @@ header {
     text-align: center;
 }
 
+#top > p {
+    align-self: center;
+    text-align: center;
+}
+
 nav {
     background-color: #3cacbe;
     height: fit-content;
@@ -248,10 +253,10 @@ input::placeholder {
 footer {
     width: 100%;
     max-height: 5vh;
-    background-color: antiquewhite;
+    background-color: #c6cfd3;
     text-align: center;
     justify-content: center;
     align-items: center;
     margin-top: 5vh;
-    padding: 1vh;
+    padding: 3vh;
 }
