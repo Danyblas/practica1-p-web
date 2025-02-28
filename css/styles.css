@@ -1,5 +1,5 @@
 body {
-    background-color: #282e32;
+    background-color: #ebebeb;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -8,19 +8,29 @@ body {
 
 header {
     width: 100%;
-    background-color: grey;
+    background-color: #fffef6;
     height: fit-content;
     max-height: 20vh;
     text-align: center;
 }
 
 #top {
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+#top > h1 {
     text-align: center;
 }
 
 #navigation {
-    background-color: aqua;
-    height: 5vh;
+    background-color: #3cacbe;
+    height: fit-content;
+    max-height: 4vh;
+    justify-items: center;
+    align-items: center;
 }
 
 ul {
@@ -28,22 +38,21 @@ ul {
     margin: 0;
     display: flex inline;
     justify-content: center;
-    height: 100vh;
     gap: 1rem;
 
 }
 li {
     list-style: none;
+    margin-inline: 25%;
 
 
 }
 li a {
     text-decoration: none;
-    color: #000;
+    color: #fffef6;
+    font-weight: bold;
     padding: 10px 15px;
     display: block;
-    background-color: #f3f3f3;
-    transition: 0.5s;
 }
 
 #part-1 {
@@ -96,18 +105,50 @@ li a {
 
 .services {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     background-color: antiquewhite;
     max-width: 27vw;
     margin: 3vw;
     padding: 15px;
+    text-align: center;
+    align-items: center;
 }
+
+.services > div {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    background-color: aquamarine;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #part-3 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
 }
 
 form {
+    max-width: 60vw;
+    background-color: blueviolet;
+    padding: 2vw;
+
+}
+
+#formToLeft {
     text-align: left;
+}
+
+footer {
+    width: 100%;
+    max-height: 5vh;
+    background-color: antiquewhite;
+    text-align: center;
+    margin-top: 5vh;
 }
